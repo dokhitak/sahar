@@ -6,43 +6,458 @@
 	<title>Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- font awesome icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-	<nav>
-		<div class="logo">
-			Portfolio.
-		</div>
-		<ul>
-			<li class="active">Home</li>
-			<li>About</li>
-			<li>Skills</li>
-			<li>Portfolio</li>
-			<li>Contact</li>
-		</ul>
-	</nav>
+	<!-- Portfolio website -->
 
-	<div class="content">
-		<div class="intro">
-			<p style="font-size: 1.5em;">Hello it's me</p>
-			<p style="font-size: 3em;">John Kendric</p>
-			<p style="font-size: 1.5em;">and i'm a Frontend Developer</p>
-			<p style="font-size: 0.7em">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-		
-			<div class="icons">
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-instagram"></i>
+<head>
+  <!--Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-			</div>
-			<button class="download-cv-btn">Download CV</button>
-		</div>
-		<img src="img.png" class="bg-img">
+  <!--website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-	</div>
+  <!--mobile navbar-->
+<div class="navbar-fixed hide-on-med-and-up">
+  <nav class="hide-on-med-and-up grey z-depth-3 darken-1">
+    <div class="nav-wrapper">
+      <a href="#home" class="brand-logo">Marc Turpin</a>
+      <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
 
+<ul class="side-nav" id="mobile-menu">
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#testimonials">Testimonials</a></li>
+  <li><a href="#about-me">About me</a></li>
+  <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/marcturpin91/"><i class="fa fa-linkedin fa-3x"></i></a></li>
+  <li><a target="_blank" class="github" href="https://github.com/marcturpin91"><i class="fa fa-github fa-3x"></i></a></li>
+  <li><a target="_blank" class="email" href="mailto:marc.turpin91@gmail.com"><i class="fa fa-envelope fa-3x"></i></a></li>
+  <li><a target="_blank" class="resume" href="https://www.slideshare.net/slideshow/embed_code/key/I1XI8yNFHq7YEB"><i class="fa fa-paperclip fa-3x"></i></a></li>
+</ul>
+
+  <!--Landing page-->
+<div id="home" class="scrollspy">
+  <div class="parallax-container cover-overlay" style="height: 100vh;">
+    <div class="row">
+      <div class="col l8 offset-l1 m10 s12 center white-text cover-text">
+        <p class="thin title">MARC</p>
+        <p class="thin title"><br><b>TURPIN</b></p>
+        <p class="subtitle">Programmer • Life Explorer</p>
+        <p class="cover-quote">
+          I have no special talents. I am only <span class="red">passionately curious.</span>
+        </p>
+        <span class="cover-quote-author right">
+            Albert Einstein </span>
+      </div>
+    </div>
+    <div class="parallax">
+      <img src="https://images.unsplash.com/photo-1468386735537-1488fd34c89b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=db900b784f890b29f06d29930e77f38c">
+    </div>
+  </div>
+</div>
+
+<!--website layout main 'row'-->
+<div class="row">
+    <!--right sided column nav menu on med+ screens-->
+  <div class="col hide-on-small-only m2 offset-m10">
+    <ul class="section table-of-contents">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#about-me">About me</a></li>
+      <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/marcturpin91/"><i class="fa fa-linkedin fa-3x"></i></a></li>
+      <li><a target="_blank" class="github" href="https://github.com/marcturpin91"><i class="fa fa-github fa-3x"></i></a></li>
+      <li><a target="_blank" class="email" href="mailto:marc.turpin91@gmail.com"><i class="fa fa-envelope fa-3x"></i></a></li>
+      <li><a target="_blank" class="resume" href="https://www.slideshare.net/slideshow/embed_code/key/I1XI8yNFHq7YEB"><i class="fa fa-paperclip fa-3x"></i></a></li>
+    </ul>
+  </div>
+  
+   <!--website content column-->
+  <div class="col s12 m10 l10 center">
+    <div class="container">
+
+      <div id="skills" class="section scrollspy">
+        <div class="new-section">
+          <div class="row">
+            <h2 class="col m10 offset-m1 s12 center thin red white-text z-depth-3"> SKILLS </h2>
+          </div>
+          
+          <p class="flow-text">
+            I am passionate about learning & sharing, but more importantly, I am an empathetic person who strives for self-improvement and helping others. I pride myself on surpassing expectations, not only by my work, but through my contributions to the team. <br><br> Here are some of the things I have knowledge on:
+          </p>
+          <h5> Languages </h5>
+          <div class="chip">Java</div>
+          <div class="chip">JavaScript</div>
+          <div class="chip">HTML & CSS</div>
+          <div class="chip">C++</div>
+          <div class="chip">Python</div>
+          <div class="chip">Fluent in French</div>
+
+          <h5> Tech Concepts </h5>
+          <div class="chip">Algorithms</div>
+          <div class="chip">Data Structures</div>
+          <div class="chip">Web Development</div>
+          <div class="chip">Artificial Intelligence</div>
+          <div class="chip">Databases</div>
+          <div class="chip">Problem Solving</div>
+          <div class="chip">Android</div>
+          <div class="chip">Version Control</div>
+          <div class="chip">Testing</div>
+          <div class="chip">Agile Environment</div>
+
+          <h5> Other </h5>
+          <div class="chip">Leadership</div>
+          <div class="chip">Team Work</div>
+          <div class="chip">Marketing</div>
+          <div class="chip">Sales</div>
+          <div class="chip">Management</div>
+        </div>
+      </div>
+
+      <div class="parallax-container" style="height: 250px;">
+        <div class="parallax"><img data-src="http://images.unsplash.com/photo-1455612693675-112974d4880b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=d448e265cfae80498d0b91babb54ac7d"></div>
+      </div>
+
+
+      <div id="projects" class="section scrollspy">
+        <div class="new-section">
+          <div class="row">
+            <h2 class="col m10 offset-m1 s12 center thin red white-text z-depth-3"> PROJECTS </h2>
+          </div>
+
+          <div class="row">
+            <div class="col m6 s10 offset-s1">
+              <div class="card medium hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator card-resizeimg" data-src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/1248851.GmxGdR.c566bc59-91c6-46eb-92d9-c2a039676b40.png" alt="">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Terry Fox Webpage<i class="material-icons right">more_vert</i></span>
+                  <p>Webpage created as a tribute to Terry Fox.</p>
+                  <p><a class="right" target='_blank' href="https://codepen.io/berzark/pen/GmxGdR">Link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Terry Fox Webpage<i class="material-icons right">close</i></span>
+                  <p>
+                    Project created to practice web development.
+                  </p>
+                  <p> Technology used <br> HTML, CSS (Bootstrap)
+                  </p>
+                  <p><a class="right" href="https://codepen.io/berzark/pen/GmxGdR">Link</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col m6 s10 offset-s1">
+              <div class="card medium hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator card-resizeimg" data-src="http://www.just5.com/content/img/android.png" alt="">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Android NFC Alarm<i class="material-icons right">more_vert</i></span>
+                  <p>Alarm that uses near field communication (NFC) <br><a target='_blank' class="right" href="https://github.com/marcturpin91">Link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Android NFC Alarm<i class="material-icons right">close</i></span>
+                  <p>
+                    Android application that uses NFC technology to turn off an alarm clock. Application is fragment based and utilizes a dynamic listview which gets its data from a local SQLite database.
+                  </p>
+                  <p> Technology used <br> Android, SQLite, Fragments
+                  </p>
+                  <p><a target='_blank' class="right" href="https://github.com/marcturpin91">Link</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col m6 offset-m3 s10 offset-s1">
+              <div class="card medium hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator card-resizeimg" data-src="https://dummyimage.com/mediumrectangle/222222/eeeeee" alt="">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Web Crawler<i class="material-icons right">more_vert</i></span>
+                  <p>Crawler created in Python to automate tedious work.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Web Crawler<i class="material-icons right">close</i></span>
+                  <p>
+                    Replicated the menu of a website in Excel in order to facilitate day-to-day operations for the uOttawa tech team. Wrote a Python script that recursively navigated over 10,000 links. This project enabled the team to be more efficient, specifically in testing
+                    phases, as it allowed users to search for a page/feature directly using the spreadsheet instead of navigating through many links.
+                  </p>
+                  <p> Technology used <br> Python, Java, Excel
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container" style="height: 250px;">
+        <div class="parallax"><img data-src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/RR7MKITV2U.jpg"></div>
+      </div>
+
+      
+      <div id="experience" class="section scrollspy">
+        <div class="new-section">
+          <div class="row">
+            <h2 class="col m10 offset-m1 s12 center thin red white-text z-depth-3"> EXPERIENCE </h2>
+          </div>
+
+          <div class="row">
+            <div class="col m6 s10 offset-s1">
+              <div class="card medium hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator card-resizeimg" data-src="http://bpl.circdata-solutions.co.uk/Fusion//client_files/default/DynamailImages/CMIP%20Website%20Sponsors/ciena-logo.jpg" alt="">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Software Developer (Ciena)<i class="material-icons right">more_vert</i></span>
+                  <p>4 months - Winter 2017
+                    <br> Tags: JavaScript, GIT, REST APIs, Automation
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Software Developer (Ciena)<i class="material-icons right">close</i></span>
+                  <p>
+                    Worked in the Blue Planet division of Ciena, which consists of over 100 developers who focus on end-to-end software solutions for Ciena's clients. In between my assigned tasks, I took the initiative to improve an important JavaScript library that was
+                    being used throughout the division.
+                    <br><br> ►SKILLS ACQUIRED <br> • JavaScript, Git, BitBucket, REST APIs, Postman & TeamCity (continuous integration)
+                    <br> ► ACCOMPLISHMENTS
+                    <br> • Developed an automated regression testing suite using JavaScript, Postman & TeamCity.
+                    <br> • Pushed many useful methods to an important internal JavaScript library.
+                    <br> • Improved existing library methods through refactoring and error handling.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col m6 s10 offset-s1">
+              <div class="card medium hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator card-resizeimg" data-src="http://www.flowerscanadagrowers.com/img/affiliates/CRA.jpg" alt="">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Junior Programmer (CRA)<i class="material-icons right">more_vert</i></span>
+                  <p>4 months - Summer 2016
+                    <br> Tags: Java, JIRA, Automation, Testing</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Junior Programmer (CRA)<i class="material-icons right">close</i></span>
+                  <p>
+                    Worked in an Agile environment as part of the RPAS team at the CRA. Completed many java development tasks and various testing tasks including automated test scripts using RFT. <br><br> ►SKILLS & KNOWLEDGE ACQUIRED <br> • Java development
+                    and debugging using Eclipse <br> • Source control experience using WinCVS <br> • Understanding of Agile environment concepts <br> • Knowledge on RFT scripting <br> • Experience using JIRA platform for bug resolution
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col m6 s10 offset-s1">
+              <div class="card medium hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator card-resizeimg" data-src="http://cou.on.ca/wp-content/uploads/2015/04/uottawa-icon.png" alt="">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Programmer (uOttawa)<i class="material-icons right">more_vert</i></span>
+                  <p>4 months - Summer 2015 <br> Tags: Python, Databases, Scripting, Automation</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Programmer (uOttawa)<i class="material-icons right">close</i></span>
+                  <p>
+                    Worked within the university's Student Information Systems team. Completed various tasks revolved around transferring data from the current database to a new system. Created scripts to automate certain tasks and also completed some testing on the new
+                    system. <br><br> ►SKILLS ACQUIRED <br> • Python Scripting <br> • Knowledge on MS Access and Databases <br> • Basic skills in SQL <br> ► ACCOMPLISHMENTS <br> • Took initiative in improving overall team performance
+                    (see web crawler project) <br> • Automated tasks using Python scripts
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col m6 s10 offset-s1">
+              <div class="card medium hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator card-resizeimg" data-src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/005/083/202/1992978.png" alt="">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">President (Student Union)<i class="material-icons right">more_vert</i></span>
+                  <p>12 months - 2013-14 <br> Tags: Leadership, Management, Team work</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">President (Student Union)<i class="material-icons right">close</i></span>
+                  <p>
+                    The student association at La Cité Collégiale (AELCC) is a nonprofit organization that manages a budget of $1.4 million. <br><br> ►SKILLS ACQUIRED <br> •Developed public speaking skills by leading executive committee meetings, the
+                    board of governors, and the general assembly. <br> •Acquired management skills and demonstrated leadership by supervising the activities of the organization, the executive directors and the board of governors. <br> •Gained knowledge
+                    of human resources by hiring and training a new executive director. <br> •Obtained organizational skills by coordinating the training of the incoming student administration. <br> •Improved time management and interpersonal skills by
+                    prioritizing and delegating tasks to employees and administrators. <br> ► ACCOMPLISHMENTS <br> • Increased the number of applications for the electoral process of the board by 50 % <br> • Created a new 'technology' committee with the
+                    college <br> • Modified the student union's bylaws to favor student input and overall integrity
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col m6 offset-m3 s10 offset-s1">
+              <div class="card medium hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator card-resizeimg" data-src="https://www.circulaire-en-ligne.ca/wp-content/uploads/futureshop-logo.jpg" alt="">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Product Expert (Future Shop)<i class="material-icons right">more_vert</i></span>
+                  <p>11 months - 2011-12 <br> Tags: Sales, Problem Solving, Public Speaking</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Product Expert (Future Shop)<i class="material-icons right">close</i></span>
+                  <p>
+                    ► ACCOMPLISHMENTS <br> • Excelled in both the camera and television department <br> • Finished a fiscal quarter as the 3rd best salesman in all of eastern Canada <br> • Had a leadership role in helping the camera department become
+                    profitable
+                    <br> • Only 1 month of adjustment in each department before ending up in the top 10% of salesmen <br> • Ranked as a top 10% salesman (180+ salesmen) on numerous occasions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="testimonials" class="section scrollspy">
+        <div class="new-section">
+          <div class="row">
+            <h2 class="col m10 offset-m1 s12 center thin red white-text z-depth-3"> TESTIMONIAL </h2>
+          </div>
+
+          <div class="row">
+            <div class="col m10 s10 offset-s1">
+              <div class="row valign-wrapper">
+                <div class="col s4 lr-border">
+                  <img data-src="https://cdn.pixabay.com/photo/2016/11/29/05/46/adult-1867618_960_720.jpg" class="circle responsive-img testimonial-pic" alt="">
+                </div>
+                <div class="col s8">
+                  <p class="black-text testimonial-text"> Marc Turpin? Isn't that the guy who randomly laughs to himself? Yeah, I guess he's okay. </p>
+                  <span class="author right"> University of Ottawa Student </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m10 offset-m2 s10 offset-s1">
+              <div class="row valign-wrapper">
+                <div class="col s8">
+                  <p class="black-text testimonial-text right"> A testimonial for what? Can you just please take out the garbage. </p>
+                  <span class="author right"> Marc's mother </span>
+                </div>
+                <div class="col s4 rg-border">
+                  <img data-src="https://cdn.pixabay.com/photo/2017/07/17/22/00/annoyed-2514029_960_720.jpg" class="circle responsive-img right" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col m10 s10 offset-s1">
+              <div class="row valign-wrapper">
+                <div class="col s4 lb-border">
+                  <img data-src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAASPAAAAJDg5OTNiMGRkLTVjODEtNGRhYi1iNDExLTdiMjRlOGQ4NDJmNA.jpg" class="circle responsive-img" alt="">
+                </div>
+                <div class="col s8">
+                  <p class="black-text testimonial-text"> Marc is probably the best programmer I have ever seen. I would not hesitate to hire him. </p>
+                  <span class="author right"> Himself </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="about-me" class="section scrollspy">
+        <div class="new-section">
+          <div class="row">
+            <h2 class="col m10 offset-m1 s12 center thin red white-text z-depth-3"> ABOUT ME </h2>
+          </div>
+
+          <div class="parallax-container testing" style="height: 300px;">
+            <div class="parallax"><img data-src="https://cdn.pixabay.com/photo/2016/11/21/14/20/adventure-1845653_960_720.jpg"></div>
+          </div>
+
+          <p class="flow-text">
+            Hello! My name is Marc Turpin. 3rd year student at the University of Ottawa, BSc of Computer Science (data science option) program. I am an extremely curious person with a wide range of interests and passions. Currently expanding my knowledge and skills
+            in the field of artificial intelligence.
+          </p>
+
+          <h5 class="center">Here are some things I enjoy</h5>
+          <div class="row">
+            <ul class="col m8 offset-m2 s10 offset-s1 collapsible white" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">music_video</i>Music, Movies & Books</div>
+                <div class="collapsible-body">
+                  <p><b>Music:</b> The Beatles • Kendrick Lamar • Tame Impala • Supertramp • Neil Young • Childish Gambino • Fleetwood Mac • Led Zeppelin • Alexisonfire • Wings</p>
+                  <p><b>Movies:</b> The Prestige • Zoolander • Inception • Interstellar • Lord of the Rings • City of God • The Usual Suspects • Wall-E • Captain Fantastic • Superbad</p>
+                  <p><b>Books:</b> Catch-22 • The Glass Castle • A Short History of Nearly Everything • The Demon Haunted World: Science as a Candle in the Dark • Tesla Biography • Elon Musk Biography • On Intelligence • Thinking, Fast and Slow • E=mc^2
+                    • Man's Search for Meaning</p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">directions_run</i>Activities & Sports</div>
+                <div class="collapsible-body">
+                  <p><b>Activities:</b> Making people laugh • Hiking • Reading • Learning • Teaching • Travelling • Making myself laugh • Trying new things • Helping </p>
+                  <p><b>Sports:</b> Hockey • MMA • Soccer • Basketball • Running</p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">favorite</i>General Interests</div>
+                <div class="collapsible-body">
+                  <p>Programming • Artificial Intelligence • Bioinformatics • Science • History • Philosophy • Game Theory • Fitness • Entrepreneurship • Everything Beatles</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="contact" class="section">
+          <div class="row">
+            <h3 class="col m8 offset-m2 s12 center thin black-text"> Reach out to me</h3>
+          </div>
+
+          <div class="row">
+            <div class="col m6 offset-m3 s8 offset-s2">
+              <div class="row social">
+                <div class="col s3 center">
+                  <a target="_blank" class="linkedin tooltipped" data-position="bottom" data-delay="50" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/marcturpin91/"><i class="fa fa-linkedin fa-3x"></i></a>
+                </div>
+                <div class="col s3 center">
+                  <a target="_blank" class="github tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github" href="https://github.com/marcturpin91"><i class="fa fa-github fa-3x"></i></a>
+                </div>
+                <div class="col s3 center">
+                  <a target="_blank" class="email tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email" href="mailto:marc.turpin91@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+                </div>
+                <div class="col s3 center">
+                  <a target="_blank" class="resume tooltipped" data-position="bottom" data-delay="50" data-tooltip="Resume" href="https://www.slideshare.net/slideshow/embed_code/key/I1XI8yNFHq7YEB"><i class="fa fa-paperclip fa-3x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <h5 class="col m6 offset-m3 s8 offset-s2 center thin black-text"> Share similar interests? Let me know! </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jquery.lazyloadxt.min.js"></script>
 </body>
 </html>

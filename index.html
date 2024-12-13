@@ -455,7 +455,19 @@
     </div>
   </div>
 </div>
+<script>
+	  $(document).ready(function(){
+    $('.carousel').carousel();
+    $(".button-collapse").sideNav();
+    $('.scrollspy').scrollSpy();
+    $('.parallax').parallax();
+    });
 
+$.extend($.lazyLoadXT, {
+  edgeY:  150,
+  srcAttr: 'data-src'
+});
+</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jquery.lazyloadxt.min.js"></script>
